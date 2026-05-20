@@ -17,6 +17,7 @@ class WorkerConfig:
     heartbeat_interval_s: float = 12.0
     base_url: str = ""
     capabilities: list[str] = field(default_factory=lambda: ["mock-trtllm-70b"])
+    gateway_auth_token: str = ""
     deterministic_mode: bool = True
     # TRT-LLM is the dc-premium tier; advertised price reflects that.
     price_per_million_tokens: int = 4_000_000
